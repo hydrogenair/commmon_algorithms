@@ -1,0 +1,3 @@
+git init新建初始仓库
+git add . 跟踪文件 合并修改
+git commit -m "提交所作注解"：更新修改
