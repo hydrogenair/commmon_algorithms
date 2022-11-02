@@ -1,5 +1,6 @@
 #include <stdio.h>
-void put_string(const char *s){//放第一个
+void put_string(const char *s){
+    putchar(*s);//放第一个
     while(*s++){
         putchar(*s);//放下一个
     }

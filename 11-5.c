@@ -1,8 +1,8 @@
 #include <stdio.h>
-int str_chnum(const char *s,int c){
+int str_char(const char *s,int c){
     int i=0;
     if(*s==c){
-        return 1;
+        return 0;
     }
     while (*s++){
         i++;
@@ -21,5 +21,5 @@ int main() {
     printf("ÇëÊäÈë×Ö·û´®:");
     scanf("%s",s);
     
-    printf("%d", str_chnum(s, c));
+    printf("%d", str_char(s, c));
 }
