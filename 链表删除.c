@@ -52,3 +52,19 @@ link* delete(link* p,int data){
     return head;
 
 }
+//struct ListNode *removeElements(struct ListNode *head, int val) {
+    // struct ListNode *start = malloc(sizeof(struct ListNode)), *p;
+    // start->next = head;
+    // p = start;
+    // while (p&&p->next) {
+    //     if (p->next->val == val) p->next = p->next->next;
+    //     else p = p->next;
+    // }
+    // return start->next;
+
+//Á´±íÉ¾³ýµü´ú
+void deleteNode(struct ListNode* node) {
+    node->val=node->next->val;
+    node->next=node->next->next;
+    
+}
